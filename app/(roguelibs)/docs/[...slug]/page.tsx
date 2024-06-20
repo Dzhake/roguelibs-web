@@ -20,7 +20,7 @@ export default function DocPageIndex({ params }: PageProps) {
 }
 
 const props: Omit<DocPageProps, "path"> = {
-  repo: "SugarBarrel/RogueLibs",
+  repo: "Chasmical/RogueLibs",
   branch: "v4-beta",
   sidebar: "dev-docs",
   serveLocal: findDirectoryWithTarget(__dirname, "RogueLibs/RogueLibs.sln") + "/RogueLibs",
