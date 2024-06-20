@@ -19,7 +19,6 @@
   display: block;
   border-radius: 50%;
   aspect-ratio: 1;
-  margin: 10px;
 }
 .overlay {
   position: absolute; inset: 0;
@@ -42,4 +41,7 @@
   border: none;
   border-radius: 50%;
   line-height: 0;
+  width: auto !important;
+  padding: 8px;
+  padding-right: 0;
 }
