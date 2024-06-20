@@ -6,7 +6,7 @@
   border-radius: 0.5rem;
   transition: all 0.2s ease;
   overflow: hidden;
-  width: 200px; height: 145px;
+  width: 500px; height: 260px;
 
   &:hover, &:focus-within {
     outline: solid 1px var(--color-secondary);
@@ -26,7 +26,7 @@
 
 .window {
   position: relative;
-  width: 100%; height: 100px;
+  width: 100%; height: 200px;
   outline: solid 1px var(--color-secondary-darkest);
   transition: all 0.2s ease;
   overflow: hidden;
