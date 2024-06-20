@@ -27,9 +27,8 @@ export default function MainLayout({ className, children, ...props }: MainLayout
         <div>
           <label>{"Other stuff"}</label>
           <Link href="/about">{"About RogueLibs"}</Link>
-          <Link href="/privacy-policy">{"Privacy Policy"}</Link>
-          <Link href="/terms-of-service">{"Terms of Service"}</Link>
-          <Link href="https://github.com/SugarBarrel/roguelibs-web">{"Website's source repo"}</Link>
+          <Link href="/mods">{"Streets of Rogue mods list"}</Link>
+          <Link href="https://github.com/Dzhake/roguelibs-web">{"Website's source repo"}</Link>
         </div>
         <div>
           <label>{"Guides and Information"}</label>
