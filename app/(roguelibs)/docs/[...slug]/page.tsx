@@ -21,7 +21,7 @@ export default function DocPageIndex({ params }: PageProps) {
 
 const props: Omit<DocPageProps, "path"> = {
   repo: "Dzhake/RogueLibs",
-  branch: "v4-beta",
+  branch: "main",
   sidebar: "dev-docs",
   serveLocal: findDirectoryWithTarget(__dirname, "RogueLibs/RogueLibs.sln") + "/RogueLibs",
 };
