@@ -37,6 +37,10 @@ export default function MainLayout({ className, children, ...props }: MainLayout
           <Link href="/docs/getting-started/installation">{"Developing mods"}</Link>
         </div>
         <div>
+          <label>{"Tools"}</label>
+          <Link href="/tools/chunk-difficulty-calculator">{"Chunk difficulty calculator"}</Link>
+        </div>
+        <div>
           <label>{"Streets of Rogue"}</label>
           <DiscordLink>{"SoR on Discord"}</DiscordLink>
           <Link href="https://store.steampowered.com/app/512900">{"SoR on Steam"}</Link>
