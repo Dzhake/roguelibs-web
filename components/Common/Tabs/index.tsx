@@ -64,7 +64,7 @@ function TabsHeader({ tabs, selectedValue, selectValue, faded }: TabsHookOutput 
             role="tab"
             tabIndex={isSelected ? 0 : -1}
             aria-selected={isSelected}
-            ref={tabControl => tabRefs.push(tabControl)}
+            ref={tabControl => void tabRefs.push(tabControl)}
             onKeyDown={handleKeydown}
             onClick={handleTabChange}
             {...attr}
