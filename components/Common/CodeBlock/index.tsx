@@ -109,13 +109,16 @@ function CopyButton({ code }: { code: string }) {
   );
 }
 
+// remove legacy Docusaurus line highlighting directives
+const highlightLineRegex = /^\s*\/\/ highlight-/;
+
 function stringifyChildren(children: any, results: string[] = []) {
   for (const child of Children.toArray(children)) {
     if (typeof child !== "boolean" && typeof child !== "undefined" && child !== null) {
       if ((child as any).type === "code") {
         stringifyChildren((child as any).props.children, results);
       } else {
-        const lines = ("" + child).split("\n");
+        const lines = ("" + child).split("\n").filter(l => !highlightLineRegex.test(l));
         if (!lines.at(-1)) lines.pop();
         results.push(...lines);
       }
