@@ -49,6 +49,6 @@ export async function fetchFile({ repo, branch, path, serveLocal }: FileFetchInf
     return content.toString();
   }
   const url = `https://raw.githubusercontent.com/${repo}/${branch ?? "main"}/${path}`;
-  const res = await fetch(url, { next: { tags: ["docs"] } });
+  const res = await fetch(url, { next: { tags: ["docs"], revalidate: 600 } });
   return await res.text();
 }
