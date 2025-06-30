@@ -44,10 +44,10 @@ export interface FileFetchInfo {
 }
 
 export async function fetchFile({ repo, branch, path, serveLocal }: FileFetchInfo) {
-  if (process.env.NODE_ENV === "development" && serveLocal) {
+  /*if (process.env.NODE_ENV === "development" && serveLocal) {
     const content = await readFile(`${serveLocal}/${path}`, "utf8");
     return content.toString();
-  }
+  }*/
   const url = `https://raw.githubusercontent.com/${repo}/${branch ?? "main"}/${path}`;
   const res = await fetch(url, { next: { tags: ["docs"], revalidate: 600 } });
   return await res.text();

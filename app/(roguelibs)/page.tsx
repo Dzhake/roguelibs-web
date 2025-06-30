@@ -5,10 +5,8 @@ import Link from "@components/Common/Link";
 export default function HomePage() {
   return (
     <div className={styles.container}>
-      <div>{"RogueLibs Web is working!"}</div>
-      <Link href="/mods/">{"Go to mods page"}</Link>
-      <Link href="/docs/user-guide/installation">{"Go to the installation guide"}</Link>
-      <Link href="/docs/getting-started/installation">{"Go to the developer documentation"}</Link>
+      <Link href="/docs/user-guide/installation">{"Installation guide"}</Link>
+      <Link href="/docs/getting-started/installation">{"Mod developer documentation"}</Link>
     </div>
   );
 }

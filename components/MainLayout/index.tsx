@@ -1,7 +1,6 @@
 import Link from "@components/Common/Link";
 import styles from "./index.module.scss";
 import clsx from "clsx";
-import AccountPanel from "@components/MainLayout/AccountPanel";
 import DiscordLink from "@components/MainLayout/DiscordLink";
 
 export interface MainLayoutProps {
@@ -18,7 +17,6 @@ export default function MainLayout({ className, children, ...props }: MainLayout
         <Link href="/" underline={false} className={styles.logo}>
           <img src="/logo-long.png" alt="RogueLibs' logo" />
         </Link>
-        <AccountPanel />
       </div>
       <div className={clsx(styles.body, className)} {...props}>
         {children}
@@ -27,7 +25,6 @@ export default function MainLayout({ className, children, ...props }: MainLayout
         <div>
           <label>{"Other stuff"}</label>
           <Link href="/about">{"About RogueLibs"}</Link>
-          <Link href="/mods">{"Streets of Rogue mods list"}</Link>
           <Link href="https://github.com/Dzhake/roguelibs-web">{"Website's source repo"}</Link>
         </div>
         <div>
