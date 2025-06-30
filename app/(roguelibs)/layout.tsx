@@ -2,11 +2,11 @@ import { ScrollControllerProvider } from "@lib/hooks/useScrollPositionBlocker";
 import { CustomSearchParamsProvider } from "@lib/hooks/useSearchParams";
 import MainLayout from "@components/MainLayout";
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
 import "../global.scss";
 import "normalize.css";
+import localFont from "next/font/local";
 
-export const munroFont = localFont({
+const munroFont = localFont({
   src: "../Munro.woff2",
   display: "swap",
   fallback: ["Munro"],
